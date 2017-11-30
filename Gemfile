@@ -18,6 +18,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 
 gem 'paperclip', '~> 5.1'
+gem 'simple_form', '~> 3.5'
 
 
 
