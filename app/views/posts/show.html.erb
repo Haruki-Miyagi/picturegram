@@ -1,0 +1,19 @@
+<div class="posts-wrapper row" >
+    <div class="post">
+        <div class="post-head">
+            Posted by Bluelime Learning
+        </div>
+    </div>
+    <div class="name">
+        <div class="image center-block">
+            <%= image_tag @post.image.url(:medium) %>
+            <p class="tiele">
+                <%= @post.title %>
+            </p>
+            <div class="text-center edit-links">
+                <%= link_to "Back to Post images", posts_path %>
+            </div>
+            
+        </div>
+    </div>
+</div>
