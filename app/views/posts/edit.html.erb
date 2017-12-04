@@ -1,6 +1,9 @@
 
-<h1> Create a New Image Post </h1>
+<h1> Edit Post </h1>
 
+<div class="text-center">
+    <%= image_tag @post.image.url(:medium) %>
+</div>
 <div class="form-wrapper">
   <%= simple_form_for @post, html: { class: 'form-horizontal', multipart: true} do |f| %>
     <div class="form-group">
@@ -14,7 +17,9 @@
     </div>
   <% end %>
 </div>
+     
 
-
-
+<div class="text-center edit-links">
+    <%= link_to 'View all Post', posts_path %>
+</div>
 
